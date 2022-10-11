@@ -270,13 +270,27 @@
       </p>
     </h6>
   </div>
-  <div class="row imagecollection responsive">
-    <div class="column responsive">
+  <div
+    class="row imagecollection responsive"
+    v-motion
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0, scale: 1 }"
+    :variants="{ custom: { scale: 2 } }"
+    :delay="3500"
+  >
+    <div class="responsive">
       <img src="../assets/imagecollection.png" alt="imagecollection" />
     </div>
   </div>
-  <div class="row getInTouch responsive">
-    <div class="column responsive">
+  <div
+    class="row getInTouch responsive"
+    v-motion
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0, scale: 1 }"
+    :variants="{ custom: { scale: 2 } }"
+    :delay="3500"
+  >
+    <div class="responsive">
       <img src="../assets/getInTouch.png" alt="getInTouch" />
     </div>
   </div>
@@ -289,9 +303,11 @@
     </div>
     <div class="column">
       <p class="footerAddress linkPostionTop"><a class="links" href="#">About us</a></p>
-      <p class="footerAddress "><a class="links" href="#">Brand</a></p>
+      <p class="footerAddress"><a class="links" href="#">Brand</a></p>
       <p class="footerAddress"><a class="links" href="#">Projects</a></p>
-      <p class="footerAddress linkPostionBottom"><a class="links" href="#">Magazine</a></p>
+      <p class="footerAddress linkPostionBottom">
+        <a class="links" href="#">Magazine</a>
+      </p>
     </div>
     <div class="column">
       <p class="footerAddress linkPostionTop"><a class="links" href="#">Press</a></p>
@@ -303,12 +319,14 @@
       <p class="footerAddress linkPostionTop">T. +39 392 9133937</p>
       <p class="footerAddress">M. info@watch-lab</p>
       <p class="footerAddress"><a class="socialLinks" href="#">FACEBOOK</a></p>
-      <p class="footerAddress linkPostionBottom"><a class="socialLinks" href="#">INSTAGRAM</a></p>
+      <p class="footerAddress linkPostionBottom">
+        <a class="socialLinks" href="#">INSTAGRAM</a>
+      </p>
     </div>
   </div>
   <footer class="row footer">
-    <div class=" footerColumns footerInfo">Copyright Watch/Lab all rights reserved</div>
-    <div class=" footerColumns footerInfo">website by nssfactory</div>
+    <div class="footerColumns footerInfo">Copyright Watch/Lab all rights reserved</div>
+    <div class="footerColumns footerInfo">website by nssfactory</div>
   </footer>
 </template>
 
@@ -421,13 +439,13 @@ export default {
   display: flex;
 }
 
-.footerColumns{
+.footerColumns {
   float: left;
   width: 50%;
   align-self: center;
 }
 
-.footerInfo{
+.footerInfo {
   font-family: Miller-Display_30501;
   color: #cdc4b5;
   font-size: small;
@@ -436,7 +454,7 @@ export default {
 
 .footerTitle {
   padding-top: 60px;
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   color: white;
   font-family: Montserrat-Regular;
 }
@@ -445,25 +463,23 @@ export default {
   font-family: Miller-Display_30501;
   font-size: small;
   text-align: center;
-  color: #cdc4b5
+  color: #cdc4b5;
 }
 
-.links{
-   color: #cdc4b5;
+.links {
+  color: #cdc4b5;
 }
-.socialLinks{
+.socialLinks {
   color: #cdc4b5;
   font-family: Montserrat-Bold;
 }
 
-.linkPostionTop{
-margin-top: 200px;
-
+.linkPostionTop {
+  margin-top: 200px;
 }
 
-.linkPostionBottom{
-margin-bottom: 200px;
-
+.linkPostionBottom {
+  margin-bottom: 200px;
 }
 
 .column {
