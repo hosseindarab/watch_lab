@@ -42,9 +42,9 @@
   <div>
     <img id="HenryLondon" src="../assets/navBarImage.png" alt="Henry London" />
   </div>
-  <div class="one">
+  <div class="one responsive">
     <h1
-      class="one-title"
+      class="one-title responsive"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :enter="{ opacity: 1, y: 0, scale: 1 }"
@@ -56,7 +56,7 @@
       Patriarcal season
     </h1>
     <h6
-      class="one-firstPara"
+      class="one-firstPara responsive"
       v-motion
       :initial="{ opacity: 0, x: 100 }"
       :enter="{ opacity: 1, x: 0, scale: 1 }"
@@ -69,7 +69,7 @@
       so blinded by desire
     </h6>
     <h6
-      class="one-secondPara"
+      class="one-secondPara responsive"
       v-motion
       :initial="{ opacity: 0, x: 100 }"
       :enter="{ opacity: 1, x: 0, scale: 1 }"
@@ -79,7 +79,7 @@
       LONDON COLLECTION SEASON
     </h6>
     <h1
-      class="one-thirdPara"
+      class="one-thirdPara responsive"
       v-motion
       :initial="{ opacity: 0, x: 100 }"
       :enter="{ opacity: 1, x: 0, scale: 1 }"
@@ -90,7 +90,7 @@
       Temporary Store
     </h1>
     <h6
-      class="one-forthPara"
+      class="one-forthPara responsive"
       v-motion
       :initial="{ opacity: 0, x: 100 }"
       :enter="{ opacity: 1, x: 0, scale: 1 }"
@@ -102,7 +102,7 @@
       demoralized by the charms of pleasure of the moment, <br />
       so blinded by desire
     </h6>
-    <div class="vertical-center">
+    <div class="vertical-center responsive">
       <button
         v-motion
         :initial="{ opacity: 0, x: 100 }"
@@ -114,9 +114,22 @@
         View
       </button>
     </div>
+    <div class="NewCollection responsive">
+      <img
+        v-motion
+        :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :hovered="{ scale: 1.2 }"
+        :delay="1000"
+        id="#NewCollection"
+        src="../assets/NewCollection.png"
+        alt="NewCollection"
+      />
+    </div>
   </div>
   <div
-    class="two"
+    class="two responsive"
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
     :variants="{ custom: { scale: 2 } }"
@@ -124,7 +137,7 @@
     :delay="1000"
   >
     <h6
-      class="two-firstPara"
+      class="two-firstPara responsive"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :enter="{ opacity: 1, y: 0, scale: 1 }"
@@ -137,18 +150,166 @@
       explorer of the truth, the master-builder of human happiness. No that <br />
       are extremely painful
     </h6>
-    <img
+    <div class="TemporaryStore responsive">
+      <img
+        v-motion
+        :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :hovered="{ scale: 1.2 }"
+        :delay="1000"
+        id="TemporaryStore"
+        src="../assets/TemporaryStore.png"
+        alt="TemporaryStore"
+      />
+    </div>
+    <div class="three responsive">
+      <h6
+        class="three-title responsive"
+        v-motion
+        :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :delay="2000"
+      >
+        LONDON COLLECTION SEASON
+      </h6>
+      <h1
+        class="three-firstPara responsive"
+        v-motion
+        :initial="{ opacity: 0, x: 100 }"
+        :enter="{ opacity: 1, x: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :delay="2000"
+        :hovered="{ scale: 1.2 }"
+      >
+        New Collection <br />
+        Henry London
+      </h1>
+      <h6
+        class="three-secondPara responsive"
+        v-motion
+        :initial="{ opacity: 0, x: 100 }"
+        :enter="{ opacity: 1, x: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :delay="2000"
+      >
+        On the other hand, we denounce with righteous <br />
+        indignation and dislike men who are so beguiled and <br />
+        demoralized by the charms of pleasure of the moment, <br />
+        so blinded by desire
+      </h6>
+      <div class="vertical-center responsive">
+        <button
+          v-motion
+          :initial="{ opacity: 0, x: 100 }"
+          :enter="{ opacity: 1, x: 0, scale: 1 }"
+          :variants="{ custom: { scale: 2 } }"
+          :delay="1000"
+          class="view"
+        >
+          View
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="rowContainer responsive">
+    <h1
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :enter="{ opacity: 1, y: 0, scale: 1 }"
       :variants="{ custom: { scale: 2 } }"
       :hovered="{ scale: 1.2 }"
-      :delay="1000"
-      id="TemporaryStore"
-      src="../assets/TemporaryStore.png"
-      alt="TemporaryStore"
-    />
+      :delay="3000"
+    >
+      Press from <br />
+      Watch Lab Studio
+    </h1>
+    <h6
+      class="row-firstPara responsive"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="3000"
+    >
+      On the other hand, we denounce with <br />
+      righteous indignation and dislike men <br />
+      who are so beguiled and demoralized<br />
+      by the charms of pleasure of the<br />
+      moment, so blinded by desire, that<br />
+      they cannot foresee the pain trouble
+    </h6>
+    <div class="studio responsive">
+      <img
+        v-motion
+        :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :hovered="{ scale: 0.9 }"
+        :delay="3000"
+        id="TemporaryStore"
+        src="../assets/studio.png"
+        alt="studio"
+      />
+    </div>
+
+    <h6
+      class="detailtitle responsive"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="3000"
+    >
+      PRESS <br />
+      <p class="detailtitlegold responsive">18 SETTEMBRE 2015</p>
+      <p class="detailtitlerow responsive">
+        Most Important <br />
+        Days on Watchlab
+      </p>
+    </h6>
   </div>
+  <div class="row imagecollection responsive">
+    <div class="column responsive">
+      <img src="../assets/imagecollection.png" alt="imagecollection" />
+    </div>
+  </div>
+  <div class="row getInTouch responsive">
+    <div class="column responsive">
+      <img src="../assets/getInTouch.png" alt="getInTouch" />
+    </div>
+  </div>
+  <div class="row footerContainer responsive">
+    <div class="column footerTitle">
+      <h2 class="footerTitle">WATCH/LAB</h2>
+      <p class="footerAddress">Watch/Lab Innovation brings success</p>
+      <p class="footerAddress">Via Borgogna 5, Milan</p>
+      <p class="footerAddress">Italy</p>
+    </div>
+    <div class="column">
+      <p class="footerAddress linkPostionTop"><a class="links" href="#">About us</a></p>
+      <p class="footerAddress "><a class="links" href="#">Brand</a></p>
+      <p class="footerAddress"><a class="links" href="#">Projects</a></p>
+      <p class="footerAddress linkPostionBottom"><a class="links" href="#">Magazine</a></p>
+    </div>
+    <div class="column">
+      <p class="footerAddress linkPostionTop"><a class="links" href="#">Press</a></p>
+      <p class="footerAddress"><a class="links" href="#">Contacts</a></p>
+      <p class="footerAddress"><a class="links" href="#">Privacy Polocy</a></p>
+      <p class="footerAddress linkPostionBottom"><a class="links" href="#">Search</a></p>
+    </div>
+    <div class="column">
+      <p class="footerAddress linkPostionTop">T. +39 392 9133937</p>
+      <p class="footerAddress">M. info@watch-lab</p>
+      <p class="footerAddress"><a class="socialLinks" href="#">FACEBOOK</a></p>
+      <p class="footerAddress linkPostionBottom"><a class="socialLinks" href="#">INSTAGRAM</a></p>
+    </div>
+  </div>
+  <footer class="row footer">
+    <div class=" footerColumns footerInfo">Copyright Watch/Lab all rights reserved</div>
+    <div class=" footerColumns footerInfo">website by nssfactory</div>
+  </footer>
 </template>
 
 <script>
@@ -165,9 +326,27 @@ export default {
 #HenryLondon {
   width: 100%;
 }
+#NewCollection {
+  width: 100%;
+}
+.NewCollection {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.TemporaryStore {
+  text-align: left;
+  padding-top: 40px;
+}
 
 #TemporaryStore {
   padding-top: 90px;
+}
+
+.studio {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 50px;
 }
 
 .vertical-center {
@@ -175,6 +354,135 @@ export default {
   justify-content: center;
   align-items: center;
   height: 150px;
+}
+
+.rowContainer {
+  width: 100%;
+  height: 100%;
+  float: left;
+  font-family: Miller-Display_30501;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+
+.detailtitle {
+  vertical-align: bottom;
+  padding-left: 30px;
+  display: inline-block;
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  font-size: small;
+  text-align: left;
+  color: black;
+}
+
+.detailtitlegold {
+  font-family: Montserrat-Bold;
+  font-size: small;
+  color: #cec5b7;
+  padding-top: 5px;
+}
+
+.detailtitlerow {
+  display: inline-block;
+  font-family: Miller-Display_30501;
+  text-align: left;
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.imagecollection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.getInTouch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.footerContainer {
+  background-color: #333333;
+  width: 100%;
+}
+
+.footer {
+  background-color: #303030;
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+
+.footerColumns{
+  float: left;
+  width: 50%;
+  align-self: center;
+}
+
+.footerInfo{
+  font-family: Miller-Display_30501;
+  color: #cdc4b5;
+  font-size: small;
+  text-align: center;
+}
+
+.footerTitle {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  color: white;
+  font-family: Montserrat-Regular;
+}
+
+.footerAddress {
+  font-family: Miller-Display_30501;
+  font-size: small;
+  text-align: center;
+  color: #cdc4b5
+}
+
+.links{
+   color: #cdc4b5;
+}
+.socialLinks{
+  color: #cdc4b5;
+  font-family: Montserrat-Bold;
+}
+
+.linkPostionTop{
+margin-top: 200px;
+
+}
+
+.linkPostionBottom{
+margin-bottom: 200px;
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-firstPara {
+  color: #808086;
+  padding-top: 20px;
+  font-family: MerriweatherRegular;
+  display: inline-block;
 }
 
 .one {
@@ -187,9 +495,18 @@ export default {
   position: relative;
 }
 
+.one-title {
+  color: black;
+  font-family: Miller-Display_30501;
+  text-align: center;
+  padding-top: 20px;
+}
+
 .one-firstPara {
   color: #808086;
   padding-top: 20px;
+  font-family: MerriweatherRegular;
+  text-align: center;
 }
 
 .one-secondPara {
@@ -216,6 +533,7 @@ h1 {
   color: #808086;
   padding-top: 80px;
   text-align: center;
+  font-family: MerriweatherRegular;
 }
 
 .view {
@@ -223,6 +541,8 @@ h1 {
   color: #cec5b7;
   width: 230px;
   height: 45px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .two {
@@ -230,13 +550,45 @@ h1 {
   height: 500px;
   float: left;
   font-family: Miller-Display_30501;
-  text-align: left;
+  text-align: center;
   padding: 50px;
 }
 
 .two-firstPara {
   color: #808086;
   padding-top: 117px;
+  font-family: MerriweatherRegular;
+  text-align: left;
+}
+
+.three {
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+
+.three-title {
+  font-family: Montserrat-Bold;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: smaller;
+  color: black;
+}
+
+.three-firstPara {
+  font-family: Miller-Display_30501;
+  text-align: center;
+}
+
+.three-secondPara {
+  color: #808086;
+  padding-top: 50px;
+  font-family: MerriweatherRegular;
+  text-align: center;
 }
 
 #nav-link {
@@ -294,7 +646,6 @@ input[type="search"]:focus {
 // }
 @font-face {
   font-family: MerriweatherRegular;
-  font-weight: bold;
   src: url("../assets/font/Merriweather-Regular.ttf");
 }
 
