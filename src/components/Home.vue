@@ -1,4 +1,5 @@
 <template>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <div class="navbar-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">WATCH/LAB</a>
