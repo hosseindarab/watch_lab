@@ -43,25 +43,111 @@
     <img id="HenryLondon" src="../assets/navBarImage.png" alt="Henry London" />
   </div>
   <div class="one">
-    <h1>
+    <h1
+      class="one-title"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :hovered="{ scale: 0.8 }"
+      :delay="1000"
+    >
       History and <br />
       Patriarcal season
     </h1>
-    <h6 class="one-firstPara">
+    <h6
+      class="one-firstPara"
+      v-motion
+      :initial="{ opacity: 0, x: 100 }"
+      :enter="{ opacity: 1, x: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="1000"
+    >
       On the other hand, we denounce with righteous <br />
       indignation and dislike men who are so beguiled and <br />
       demoralized by the charms of pleasure of the moment, <br />
       so blinded by desire
     </h6>
+    <h6
+      class="one-secondPara"
+      v-motion
+      :initial="{ opacity: 0, x: 100 }"
+      :enter="{ opacity: 1, x: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="1000"
+    >
+      LONDON COLLECTION SEASON
+    </h6>
+    <h1
+      class="one-thirdPara"
+      v-motion
+      :initial="{ opacity: 0, x: 100 }"
+      :enter="{ opacity: 1, x: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :hovered="{ scale: 1.2 }"
+      :delay="1000"
+    >
+      Temporary Store
+    </h1>
+    <h6
+      class="one-forthPara"
+      v-motion
+      :initial="{ opacity: 0, x: 100 }"
+      :enter="{ opacity: 1, x: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="1000"
+    >
+      On the other hand, we denounce with righteous <br />
+      indignation and dislike men who are so beguiled and <br />
+      demoralized by the charms of pleasure of the moment, <br />
+      so blinded by desire
+    </h6>
+    <div class="vertical-center">
+      <button
+        v-motion
+        :initial="{ opacity: 0, x: 100 }"
+        :enter="{ opacity: 1, x: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :delay="1000"
+        class="view"
+      >
+        View
+      </button>
+    </div>
   </div>
-  <div class="two">
-    <h6 class="two-firstPara">
+  <div
+    class="two"
+    :initial="{ opacity: 0, y: 100 }"
+    :enter="{ opacity: 1, y: 0, scale: 1 }"
+    :variants="{ custom: { scale: 2 } }"
+    :hovered="{ scale: 1.2 }"
+    :delay="1000"
+  >
+    <h6
+      class="two-firstPara"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :delay="1000"
+    >
       But I must explain to you how all this mistaken idea of denouncing <br />
       pleasure and praising pain was born and I will give you a complete <br />
       account of the system, and expound the actual teachings of the great <br />
       explorer of the truth, the master-builder of human happiness. No that <br />
       are extremely painful
     </h6>
+    <img
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0, scale: 1 }"
+      :variants="{ custom: { scale: 2 } }"
+      :hovered="{ scale: 1.2 }"
+      :delay="1000"
+      id="TemporaryStore"
+      src="../assets/TemporaryStore.png"
+      alt="TemporaryStore"
+    />
   </div>
 </template>
 
@@ -80,20 +166,63 @@ export default {
   width: 100%;
 }
 
+#TemporaryStore {
+  padding-top: 90px;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
 .one {
   width: 50%;
-  height: 500px;
+  height: 100%;
   float: left;
   font-family: Miller-Display_30501;
   text-align: left;
   padding: 50px;
+  position: relative;
 }
-.one-firstPara{
+
+.one-firstPara {
   color: #808086;
   padding-top: 20px;
 }
-h1{
+
+.one-secondPara {
+  font-family: Montserrat-Bold;
+  text-align: center;
+  padding-top: 200px;
+  font-weight: bold;
+  font-size: smaller;
   color: black;
+}
+
+h1 {
+  color: black;
+}
+
+.one-thirdPara {
+  color: black;
+  font-family: Miller-Display_30501;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.one-forthPara {
+  color: #808086;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.view {
+  border: 1px solid;
+  color: #cec5b7;
+  width: 230px;
+  height: 45px;
 }
 
 .two {
@@ -103,16 +232,16 @@ h1{
   font-family: Miller-Display_30501;
   text-align: left;
   padding: 50px;
- 
 }
-.two-firstPara{
+
+.two-firstPara {
   color: #808086;
   padding-top: 117px;
 }
 
 #nav-link {
   color: black;
-  padding-left: 50px;
+  padding-left: 20px;
   font-family: Montserrat-Regular;
 }
 
@@ -183,5 +312,4 @@ input[type="search"]:focus {
   font-family: Montserrat-Regular;
   src: url("../assets/font/Montserrat-Regular.ttf");
 }
-
 </style>
