@@ -472,6 +472,7 @@ export default {
 .socialLinks {
   color: #cdc4b5;
   font-family: Montserrat-Bold;
+  font-size: smaller;
 }
 
 .linkPostionTop {
