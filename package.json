@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vueuse/motion": "^2.0.0-beta.12",
+    "@vueuse/motion": "^2.2.3",
     "bootstrap": "^5.2.2",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
